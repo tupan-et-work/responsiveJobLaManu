@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <title>Project Bourse</title>
+</head>
+<!-- Debut du body -->
+<body>
+    <header class="header">
+       <!--Menu-->
+        <nav>
+            <div class="navlogo">
+                <a href="https://www.amiens.fr/" target="_blank">
+                    <img src="/public/assets/img/AmiensLogo.png" alt="Amiens Métroppole">
+                </a>
+                <a href="https://lamanu.fr/" target="_blank">
+                    <img src="/public/assets/img/logolamanu.png" alt="La Manu Amiens">
+                </a>
+            </div>
+            <ul>
+                <li class="computer"><a href="#covid">Réstriction sanitaire</a></li>
+                <li class="phone"><a href="#produit">Produits</a></li>
+                <li class="table"><a href="#info">Information</a></li>
+                <li class="other"><a href="#map">Map et View</a></li>
+                <li class="contact"><a href="#contact">Contact</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Debut display flex -->
+        <div class="globalContainer">
+            <!-- En tête de page déscriptif lieu et évenement -->
+            <div class="firstPartyContainer">
+                <div class="firstPartyh1">
+                    <h1>Bourse aux objects high-tech</h1>
+                </div>
+                <div class="firstParty">
+                    <p><img class="qrcode" src="public/assets/img/qrcode_chrome.png" alt="QR Code"></p>
+                    <p>En partenariat avec la ville d'Amiens, la Manufacture organise une bourse High-Tech.</p>
+                    <p>La Manu souhaite populariser l’usage de l’informatique et propose toute l’année divers ateliers et cours de formation.</p>
+                    <p>L'évènement se déroulera les 05 et 06 juillet  2022 dans l'enceinte. Consulter la Google Map pour vous facilité l'accès.</p>
+                    <p>Des professionnels ainsi que des apprenant seront présents pour vous conseiller dans l'acquisition de matériel numériques.</p>
+                    <br>
+                  
+                </div>
+            </div>
+            <!-- Fin en tête de page -->
+            <!-- Covid mesure -->
+            <div class="container1" id="covid">
+                <div class="contentsContainer">
+                    <img src="./public/assets/img/Covid19.png">
+                    <p>En accord avec les mesures sanitaires,<br>nous vous remercions de maintenir une distanciation physique d’au moins un mètre,<br>
+                        d’utiliser le gel hydroalcoolique mis à votre disposition tout au long du parcours,<br>
+                        de respecter les gestes barrières et les indications de circulation.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Fin de Covid messure -->
+            <!-- Produit -->
+            <div class="container2">
+                <div class="contentsContainer" id="produit">
+                    <div class="imgContainer2">
+                        <img src="./public/assets/img/macbook.png">
+                        <img src="./public/assets/img/ipad.png">
+                        <img src="./public/assets/img/telephone.png">
+                    </div>
+                    <p>Les marques proposer seront:<br><br>
+                        -Pour les Ordinateurs: Apple, Assus, Acer, Lenovo, HP, Dell, ...<br>
+                        -Pour les Téléphones: Samsung, Huawei, Honor, Xiaomi,  ...<br>
+                        -Pour les Tablettes: Samsung, Microsoft, Lenovo, Huawei, ... <br>
+                    </p>
+                </div>
+             </div>   
+            <!-- Fin de produit -->
+            <div class="container3" id="info">
+                <div class="contentsContainer">
+                    <p>Les exposants sont priés de lire les informations suivantes pour ne rien oublier le jour "J":
+                        <br><br>
+                        -Prévoyez des tables et des chaises.<br>
+                        -Répartissez vos objets en famille d’objets, pour que les acheteurs aient une vision claire de tout ce que vous vendez.<br>
+                        -Affichez clairement les prix.<br>
+                        -Tenez votre stand à deux, pour toujours surveiller vos objets.<br>
+                        -Attention à la météo : prévoir tout le nécessaire pour protéger vos objets en cas d’averses (bâches).<br>
+                        -Pensez à la monnaie.<br>
+                        -Prévoyez des sacs plastiques pour les acheteurs, et du papier journal pour emballer les objets fragiles.</p>
+                </div>
+            </div>
+            <!-- Map -->
+            <div class="container4" id="map">
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.468405468864!2d2.2992870156030274!3d49.89000883546883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7857c0e87f5fb%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Ecole%20sup%C3%A9rieure%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1655996198397!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="streetview">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1656071271141!6m8!1m7!1skaAB-tU4KDGQf9f5BU8qyw!2m2!1d49.89054553284382!2d2.301877209085684!3f225.50653!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Fin de map -->
+            <!-- Formulaire -->
+            <div class="form">
+                <form action="/ma-page-de-traitement" method="post">
+                    <fieldset id="contact">
+                            <h3>Contactez-nous</h3>
+                            <br>
+                            <ol>
+                                <li>
+                                    <label for="firstNam">Votre Prénom:</label>
+                                    <input type="text" id="firstNam" name="firstNam" placeholder="Martin" required>
+                                </li>
+                                <br>
+                                <li>
+                                    <label for="Name">Votre nom:</label>
+                                    <input type="Name" id="Name" name="Name" placeholder="Dubois" required>
+                                </li>
+                                <br>
+                                <li>
+                                    <label for="Email">Votre e-mail:</label>
+                                    <input type="Email" id="Email" name="Email" placeholder="monadresse@mail.com" required>
+                                </li>
+                                <br>
+                                <li>
+                                    <label for="Date">Quel date vous convient?</label>
+                                    <select name="Date" id="Date" required>
+                                    <option value="DateChoise" disabled selected hidden>Choisissez la date et l'heure</option>
+                                    <option value="Tuesday1">Mardi 05/07/2022 14:30</option>
+                                    <option value="Tuesday2">Mardi 05/07/2022 17:30</option>
+                                    <option value="Wednesday">Mercredi 06/07/2022 15:00</option>
+                                    </select>
+                                </li>
+                                <br>
+                                <li>
+                                    <label for="message">Une question?</label>
+                                    <br>
+                                    <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+                                </li>
+                                <br>
+                                <li>
+                                    <button type="submit">Envoyer mon message</button>
+                                </li>
+                            </ol>
+                        </fieldset>
+                </form>
+            </div>
+            <!-- Fin de formulaire -->
+            <!-- Fin display Flex -->
+        </div>
+    </main>
+    <hr>
+    <!----------------------------- Début du footer --------------------------->
+    <footer class="footerFirst">
+        <div class="footerContainer">
+            <div class="fContainer">
+                <div class="footer">
+                    <div id="contact">
+                        <h4>Contact</h4>
+                        <p>06 60 06 60 06</p>
+                        <p>laBourse@lamanu.fr</p>
+                    </div>
+                    <div id="adress">
+                        <h4>Adresse</h4>
+                        <p>LaManu Amiens</p>
+                        <p>70 rue des Jacobins</p>
+                        <p>80000 Amiens</p>
+                    </div>
+                    <div id="hours">
+                        <h4>Horaires</h4>
+                        <p>Vendredi-Dimanche 10h-18h</p>
+                    </div>
+                    <div id="partnairs">
+                        <h4>Partenaires:</h4>
+                        <p>LaManu</p>
+                        <p>Amiens Métropole</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sign">       
+            <p>Dévellopé par Nassim, Muriel et Alexis</p>
+        </div>
+        <div id="legalMention">
+            <a href="potiblageur.html">Mentions Légales</a>
+        </div>
+        <div id="scrollToTop">
+            <a href="#top"><img src="./public/assets/img/upPage.png" alt="Retourner en haut"></a>
+        </div>
+    </footer>
+</body>
+<!-- Fin du body -->
+</html>

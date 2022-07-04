@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'font-1';
+    src: url('../NanumGothic-Regular.ttf');
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin:0px;
+    padding:0px;
+    font-family: 'font-1', auto;
+    overflow-x: hidden;
+}
+/* Header */
+.header {
+    background-color: #61A4CB;
+}
+/*QR Code*/
+.qrcode{
+    
+    width:150px;
+    height:150px;
+}
+/*Menu*/
+.navlogo {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.navlogo a img {
+    width: 30%;
+}
+nav{
+    width:100%;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);    border:1px solid white;
+    text-align:center;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+nav li{
+    list-style-type:none;
+    float:left;
+    /* border: 1px solid white;
+    border-left: 0px; */
+}
+nav a{
+    display:inline-block;
+    text-decoration:none;
+    padding:20px 30px;
+    /* border: 1px solid white; */
+    color:white;
+}
+.computer:hover{
+    background: linear-gradient(180deg, rgba(7, 255, 166, 0.29) 0%, rgba(0, 113, 129, 0.29) 100%);
+
+}
+.phone:hover{
+    background: linear-gradient(180deg, rgba(7, 255, 166, 0.29) 0%, rgba(0, 113, 129, 0.29) 100%);
+}
+.table:hover{
+    background: linear-gradient(180deg, rgba(7, 255, 166, 0.29) 0%, rgba(0, 113, 129, 0.29) 100%);
+
+}
+.other:hover{
+    background: linear-gradient(180deg, rgba(7, 255, 166, 0.29) 0%, rgba(0, 113, 129, 0.29) 100%);
+
+}
+.contact:hover{
+    background: linear-gradient(180deg, rgba(7, 255, 166, 0.29) 0%, rgba(0, 113, 129, 0.29) 100%);
+}
+/*Body*/
+body {
+    justify-content: center;
+    color: #303030;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+.globalContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.firstPartyContainer {
+    width: 80%;
+    height: 500px;
+    background-image: url(../img/La-Manu-Campus-Amiens-bleu.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: center;
+    background-position: center;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+}
+.firstParty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: large;
+}
+.firstPartyh1 h1 {
+    color: white;
+    background-color: #1a00797c;
+}
+.firstParty p {
+    color: white;
+    background-color: #1a00797c;
+}
+.container1 {
+    width: 90%;
+    display: flex;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    border: 1px solid white;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+.container2 {
+    width: 90%;
+    display: flex;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);    border:1px solid white;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+.container3 {
+    width: 90%;
+    display: flex;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);    border:1px solid white;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+.container4 {
+    width: 90%;
+    display: flex;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);    border:1px solid white;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+.imgContainer2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.imgContainer2 img {
+    max-width: 100px;
+    max-height: 10%;
+}
+
+.firstParty .logoLaManu img {
+    background-image: url(/public/assets/img/La-Manu-Campus-Amiens-bleu.jpeg);
+    width: 100%;
+}
+
+.contentsContainer {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.803);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-block: inherit;
+    margin-bottom: 3%;
+}
+/*Style formulaire*/
+fieldset {
+    margin-bottom: 2%;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);    border:1px solid white;
+    border-radius: 20px;
+    color:white;
+    text-align: center;
+}
+fieldset textarea {
+    width: 95%
+}
+li{
+    list-style-type: none;
+}
+
+
+.container1 img {
+    width: 35%;
+    height: 40%;
+    margin-bottom: 1%;
+}
+
+/****************************** Footer ******************************/
+
+.footerContainer {
+    display: flex;
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    height: 200px;
+    justify-content: center;
+}
+.fContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 50px;
+    text-align: center;
+    border-right: 5px #000000;
+    align-items: baseline;
+}
+
+#adress {
+    display: flex;
+    border-right: solid black 1px;
+    padding: 10px;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact {
+    display: flex;
+    border-right: solid black 1px;
+    padding: 10px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hours {
+    display: flex;
+    border-right: solid black 1px;
+    padding: 10px;
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#partnairs {
+    display: flex;
+    padding: 10px;
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sign {
+    font-size: 15px;
+}
+
+#legalMention {
+    font-size: 15px;
+}
+
+#scrollToTop {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 100px;
+    right: 10px;
+}
+
+#scrollToTop img {
+    width: 20px;
+}
+.footerFirst {
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);    border:1px solid white;
+    color: white;
+}
