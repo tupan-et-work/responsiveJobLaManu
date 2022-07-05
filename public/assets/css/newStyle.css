@@ -1,5 +1,5 @@
 nav{
-    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);    border:1px solid white;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
 }
 li:hover{
     background: linear-gradient(180deg, rgba(7, 255, 166, 0.29) 0%, rgba(0, 113, 129, 0.29) 100%);
