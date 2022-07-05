@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="public/assets/css/style.css">
+    <!--
+        Utiliser l'ancienne stylesheet pour base votre Bootstrap + Figma Maquette 
+        <link rel="stylesheet" href="public/assets/css/oldStyle.css">
+     -->
+        <link rel="stylesheet" href="public/assets/css/newStyle.css">
+     <!-- Text Fonts Links -->
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Css Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <title>Project Bourse</title>
 </head>
 <!-- Debut du body -->
 <body>
     <header class="header">
-       <!--Menu-->
-        <nav>
+       <!-- Navigation Bar -->
+        <nav class="container-fluid">
             <div class="navlogo">
                 <a href="https://www.amiens.fr/" target="_blank">
                     <img src="/public/assets/img/AmiensLogo.png" alt="Amiens Métroppole">
@@ -30,16 +39,19 @@
         </nav>
     </header>
     <main>
-        <!-- Debut display flex -->
-        <div class="globalContainer">
+        <div class="container globalContainer">
             <!-- En tête de page déscriptif lieu et évenement -->
-            <div class="firstPartyContainer">
+            <div class="row firstPartyContainer">
                 <div class="firstPartyh1">
                     <h1>Bourse aux objects high-tech</h1>
                 </div>
                 <div class="firstParty">
+<<<<<<< HEAD
                     <p><img class="qrcode" src="public/assets/img/qrcode_chrome.png" alt="QR Code"></p>
                     <p>En partenariat avec la ville d'Amiens, la Manu organise une bourse High-Tech.</p>
+=======
+                    <p>En partenariat avec la ville d'Amiens, la Manufacture organise une bourse High-Tech.</p>
+>>>>>>> 4b4032b74aac624729004858342b579adcbefba0
                     <p>La Manu souhaite populariser l’usage de l’informatique et propose toute l’année divers ateliers et cours de formation.</p>
                     <p>L'évènement se déroulera les 05 et 06 juillet 2022 dans l'enceinte. Consulter la Google Map pour vous faciliter l'accès.</p>
                     <p>Des professionnels ainsi que des apprenants seront présents pour vous conseiller dans l'acquisition de matériels numériques.</p>
@@ -49,7 +61,7 @@
             </div>
             <!-- Fin en tête de page -->
             <!-- Covid mesure -->
-            <div class="container1" id="covid">
+            <div class="row container1" id="covid">
                 <div class="contentsContainer">
                     <img src="./public/assets/img/Covid19.png">
                     <p>En accord avec les mesures sanitaires,<br>nous vous remercions de maintenir une distanciation physique d’au moins un mètre,<br>
@@ -58,13 +70,13 @@
                     
                 </div>
             </div>
-            
             <!-- Fin de Covid messure -->
             <!-- Produit -->
-            <div class="container2">
+            <div class="row container2">
                 <div class="contentsContainer" id="produit">
                     <div class="imgContainer2">
-                        <img src="./public/assets/img/macbook.png">
+                        <!-- Added (class="img-fluid") as example  -->
+                        <img class="img-fluid" src="./public/assets/img/macbook.png">
                         <img src="./public/assets/img/ipad.png">
                         <img src="./public/assets/img/telephone.png">
                     </div>
@@ -76,7 +88,8 @@
                 </div>
              </div>   
             <!-- Fin de produit -->
-            <div class="container3" id="info">
+            <!-- Important Info -->
+            <div class="row container3" id="info">
                 <div class="contentsContainer">
                     <p>Les exposants sont priés de lire les informations suivantes pour ne rien oublier le jour "J":
                         <br><br>
@@ -89,8 +102,9 @@
                         - Prévoyez des sacs plastiques pour les acheteurs, et du papier journal pour emballer les objets fragiles.</p>
                 </div>
             </div>
+            <!-- Fin de Important Info -->
             <!-- Map -->
-            <div class="container4" id="map">
+            <div class="row container4" id="map">
                 <div class="maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.468405468864!2d2.2992870156030274!3d49.89000883546883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7857c0e87f5fb%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Ecole%20sup%C3%A9rieure%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1655996198397!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -100,7 +114,7 @@
             </div>
             <!-- Fin de map -->
             <!-- Formulaire -->
-            <div class="form">
+            <div class="row form">
                 <form action="/ma-page-de-traitement" method="post">
                     <fieldset id="contact">
                             <h3>Contactez-nous</h3>
@@ -145,12 +159,11 @@
                 </form>
             </div>
             <!-- Fin de formulaire -->
-            <!-- Fin display Flex -->
         </div>
     </main>
     <hr>
     <!----------------------------- Début du footer --------------------------->
-    <footer class="footerFirst">
+    <footer class="container-fluid footerFirst">
         <div class="footerContainer">
             <div class="fContainer">
                 <div class="footer">
@@ -187,6 +200,7 @@
             <a href="#top"><img src="./public/assets/img/upPage.png" alt="Retourner en haut"></a>
         </div>
     </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
-<!-- Fin du body -->
 </html>
