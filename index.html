@@ -3,53 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--
         Utiliser l'ancienne stylesheet pour base votre Bootstrap + Figma Maquette 
         <link rel="stylesheet" href="public/assets/css/oldStyle.css">
      -->
-        <link rel="stylesheet" href="public/assets/css/newStyle.css">
      <!-- Text Fonts Links -->
-    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap Css Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+     
+     <!-- Bootstrap Css Link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     
+     <link rel="stylesheet" href="public/assets/css/newStyle.css">
     <title>Project Bourse</title>
 </head>
 <!-- Debut du body -->
 <body>
-    <header class="header container-fluid">
+    <header class="header fixed-top">
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <nav class="navbar navbar-dark d-block d-sm-block d-md-none">
+            <div class="container-fluid">
+                <div class="  col-10 fw-bold text-white d-block d-sm-block d-md-none">
+                    BOURSE AUX OBJETS HIGH-TECH
+                </div>
+                <button class="col-2 navbar-toggler d-block d-sm-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <h4 class="text-white">Collapsed content</h4>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
-            </div>
+          <div class="navList p-4 text-center text-white fw-bold">
+            <a class="list-group-item p-2" href="#covid">RESTRICTIONS SANITAIRES</a>
+            <a class="list-group-item p-2" href="#produit">PRODUITS</a>
+            <a class="list-group-item p-2" href="#info">INFORMATIONS</a>
+            <a class="list-group-item p-2" href="#map">CARTE</a>
+            <a class="list-group-item p-2" href="#contact">CONTACTS</a>
+          </div>
         </div>
-       <!--
-        <nav class="container-fluid">
-            <div class="row navlogo">
-                <a href="https://www.amiens.fr/" target="_blank">
-                    <img src="/public/assets/img/AmiensLogo.png" alt="Amiens Métroppole">
+        <!-- NAVBAR dans le mode: Tablet et Ordinateur -->
+        <nav class="nonMobileNav d-none d-sm-none d-md-block">
+            <div class="row p-2 mb-4 text-center">
+                <a class="col" href="https://www.amiens.fr/" target="_blank">
+                    <img height="80rem" src="/public/assets/img/AmiensLogo.png" alt="Amiens Métroppole">
                 </a>
-                <a href="https://lamanu.fr/" target="_blank">
-                    <img src="/public/assets/img/logolamanu.png" alt="La Manu Amiens">
+                <a class="col" href="https://lamanu.fr/" target="_blank">
+                    <img height="80rem" src="/public/assets/img/logolamanu.png" alt="La Manu Amiens">
                 </a>
             </div>
-            <div class="row list-group d-flex">
-                <a class="col list-group-item" href="#covid">Restrictions sanitaires</a>
-                <a class="col list-group-item" href="#produit">Produits</a>
-                <a class="col list-group-item" href="#info">Informations</a>
-                <a class="col list-group-item" href="#map">Carte</a>
-                <a class="col list-group-item" href="#contact">Contacts</a>
-            </div>
+            <div id="nonMobileNavList" class=" p-0 m-0 text-white text-center fw-bold d-flex justify-content-around">
+                <a class="col list-group-item p-2" href="#covid">RESTRICTIONS SANITAIRES</a>
+                <a class="col list-group-item p-2" href="#produit">PRODUITS</a>
+                <a class="col list-group-item p-2" href="#info">INFORMATIONS</a>
+                <a class="col list-group-item p-2" href="#map">CARTE</a>
+                <a class="col list-group-item p-2" href="#contact">CONTACTS</a>
+              </div>
         </nav>
-        -->
     </header>
     <main>
         <div class="container globalContainer">
@@ -71,7 +79,7 @@
             <!-- Covid mesure -->
             <div class="row container1" id="covid">
                 <div class="contentsContainer">
-                    <img src="./public/assets/img/Covid19.png">
+                    <!-- <img src="./public/assets/img/Covid19.png"> -->
                     <p>En accord avec les mesures sanitaires,<br>nous vous remercions de maintenir une distanciation physique d’au moins un mètre,<br>
                         d’utiliser le gel hydroalcoolique mis à votre disposition tout au long du parcours,<br>
                         de respecter les gestes barrières et les indications de circulation.</p>
