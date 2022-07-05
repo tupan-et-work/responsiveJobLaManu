@@ -1,3 +1,19 @@
+/* NAV CSS */
+nav, .navList{
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    text-shadow: 1px 1px 5px black;
+}
+#nonMobileNavList a.list-group-item:hover{
+    color: white;
+    background: linear-gradient(180deg, rgba(7, 255, 166, 0.29) 0%, rgba(0, 113, 129, 0.29) 100%);
+} 
+/* END NAV CSS */
+/* MAP CSS */
+#mapGoogle{
+    height: 20rem;
+    width: 32.3rem;
+}
+/* GENERAL CSS */
 .firstPartyContainer,.container1,.container2,.container3,.container4 {
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
 }
