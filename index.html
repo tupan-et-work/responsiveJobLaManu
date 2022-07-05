@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,12 +14,14 @@
     <title>Project Bourse</title>
 </head>
 <!-- Debut du body -->
+
 <body>
+    <!-- Navigation Bar -->
     <header class="header fixed-top">
-        <!-- Navigation Bar -->
+        <!-- NAVBAR dans le mode: Mobile -->
         <nav class="navbar navbar-dark d-block d-sm-block d-md-none">
             <div class="container-fluid">
-                <div class="  col-10 fw-bold text-white d-block d-sm-block d-md-none">
+                <div class="col-10 fw-bold text-white d-block d-sm-block d-md-none">
                     BOURSE AUX OBJETS HIGH-TECH
                 </div>
                 <button class="col-2 navbar-toggler d-block d-sm-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,14 +44,17 @@
                 <a class="col" href="https://www.amiens.fr/" target="_blank">
                     <img height="80rem" src="/public/assets/img/AmiensLogo.png" alt="Amiens Métroppole">
                 </a>
+                <div class="col fs-4 fw-bold text-uppercase text-white ">
+                    <p>Bourse aux objects<br> high-tech</p>
+                </div>
                 <a class="col" href="https://lamanu.fr/" target="_blank">
                     <img height="80rem" src="/public/assets/img/logolamanu.png" alt="La Manu Amiens">
                 </a>
             </div>
             <div id="nonMobileNavList" class=" p-0 m-0 text-white text-center fw-bold d-flex justify-content-around">
-                <a class="col list-group-item p-2" href="#info">INFORMATIONS</a>
                 <a class="col list-group-item p-2" href="#covid">RESTRICTIONS SANITAIRES</a>
-                <a class="col list-group-item p-2" href="#produit">PRODUITS</a>
+                <a class="col list-group-item p-2" href="#products">PRODUITS</a>
+                <a class="col list-group-item p-2" href="#info">INFORMATIONS</a>
                 <a class="col list-group-item p-2" href="#map">CARTE</a>
                 <a class="col list-group-item p-2" href="#contact">CONTACTS</a>
               </div>
@@ -57,53 +63,74 @@
     <main>
         <div class="container globalContainer">
             <!-- En tête de page déscriptif lieu et évenement -->
-            <div class="row firstPartyContainer">
-                <div class="firstPartyh1">
-                    <h1>Bourse aux objects high-tech</h1>
-                </div>
-                <div class="firstParty">
-                    <p><img class="qrcode" src="public/assets/img/qrcode_chrome.png" alt="QR Code"></p>
-                    <p>En partenariat avec la ville d'Amiens, la Manu organise une bourse High-Tech.</p>
-                    <p>La Manu souhaite populariser l’usage de l’informatique et propose toute l’année divers ateliers et cours de formation.</p>
-                    <p>L'évènement se déroulera les 05 et 06 juillet 2022 dans l'enceinte. Consulter la Google Map pour vous faciliter l'accès.</p>
-                    <p>Des professionnels ainsi que des apprenants seront présents pour vous conseiller dans l'acquisition de matériels numériques.</p>
+            <div id="firstSlide" class="row firstPartyContainer">
+                <!-- IMGs TAGS : Visible on MOBILE ONLY -->
+                <img class="col-7 d-block d-md-none py-5 px-4" src="public\assets\img\AmiensLogo.png"
+                    alt="Logo de la ville d'Amiens">
+                <img class="col-5 d-block d-md-none py-5 px-4" src="public\assets\img\logolamanu.png"
+                    alt="Logo La Manu">
+                <div class="col-12 text-white text-center px-5">
+                    <p class="fs-6 fst-italic">En partenariat avec la ville d'Amiens, La Manu organise une bourse
+                        High-Tech.</p>
+                    <p class="fs-3 fw-bold text-uppercase my-5">Du 5 au 6 Juillet 2022 de 8h00 à 19h00 <br><span
+                            class="fs-6 fw-normal">70 rue des Jacobins, 80000 Amiens</span></p>
+                    <p class="fs-6 fst-italic mt-5">Des professionnels ainsi que des apprenant seront présents pour vous
+                        conseiller dans
+                        l'acquisition de matériel numériques.</p>
                     <br>
 
                 </div>
             </div>
             <!-- Fin en tête de page -->
             <!-- Covid mesure -->
-            <div class="row container1" id="covid">
-                <div class="col-12">
+            <div class="row container1 mt-3" id="covid">
+                <div class="col-12 p-3 d-flex justify-content-center">
                     <img class="img-fluid d-sm-none d-block" src="./public/assets/img/Affiche-geste-barriere-678x454.png">
                     <img class="img-fluid d-none d-sm-block" src="./public/assets/img/Covid19.png">
                 </div>
-                    <!-- <p>En accord avec les mesures sanitaires,<br>nous vous remercions de maintenir une distanciation physique d’au moins un mètre,<br>
-                        d’utiliser le gel hydroalcoolique mis à votre disposition tout au long du parcours,<br>
-                        de respecter les gestes barrières et les indications de circulation.</p> -->
-                    
-                </div>
             </div>
             <!-- Fin de Covid messure -->
-            <!-- Produit -->
-            <div class="row container2">
-                <div class="contentsContainer" id="produit">
-                    <div class="imgContainer2">
-                        <!-- Added (class="img-fluid") as example  -->
-                       
+            <!-- Carousel de produits -->
+            <div class="row text-white text-center container2 mt-3 px-2 px-md-5 py-5">
+                <h3 id="products" class="col-12 text-uppercase pb-2">Les marques proposées</h3>
+                <div id="carouselControls" class="col-12 carousel slide" data-bs-ride="carousel">
+                    <div id="carousel-inner" class="carousel-inner fs-2 fw-bold textShadow">
+                        <div id="carousel1" class="carousel-item active" data-bs-interval="100000">
+                            <div>
+                                <h5>Pour les Ordinateurs</h5>
+                                <p>Apple, Asus, Acer, Lenovo, HP, Dell</p>
+                            </div>
+                        </div>
+                        <div id="carousel2" class="carousel-item">
+                            <div>
+                                <h5>Pour les Téléphones</h5>
+                                <p>Samsung, Huawei, Honor, Xiaomi</p>
+                            </div>
+                        </div>
+                        <div id="carousel3" class="carousel-item">
+                            <div>
+                                <h5>Pour les Tablettes</h5>
+                                <p>Samsung, Microsoft, Apple, Kindle</p>
+                            </div>
+                        </div>
                     </div>
-                    <p>Les marques proposer seront:<br><br>
-                        - Pour les Ordinateurs: Apple, Assus, Acer, Lenovo, HP, Dell, ...<br>
-                        - Pour les Téléphones: Samsung, Huawei, Honor, Xiaomi,  ...<br>
-                        - Pour les Tablettes: Samsung, Microsoft, Lenovo, Huawei, ... <br>
-                    </p>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-             </div>   
+            </div>
             <!-- Fin de produit -->
             <!-- Important Info -->
             <div class="contentsContainer">
-            <div class="row container3" id="info">
-                <div class="text-white textShadow p-5">
+            <div class="row container3 my-3" id="info">
+                <div class="text-white p-5">
                     <div class="fs-1 text-uppercase text-center mb-4">Quelques Astuces</div>
                     <ul class="list-unstyled fs-4">
 
@@ -129,107 +156,85 @@
             <!-- Map -->
             <div class="row container4 m-1" id="map">
                 <!-- Version Map for Mobile = img Map -->
-                <div class="col mapMobile d-block d-sm-block d-md-none">
+                <div class="col py-2 mapMobile d-block d-sm-block d-md-none">
                     <iframe id="mapGoogle" class="mt-1 img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.468405468864!2d2.2992870156030274!3d49.89000883546883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7857c0e87f5fb%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Ecole%20sup%C3%A9rieure%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1655996198397!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="mapNonMobile d-none d-sm-none d-md-flex">
-                    <div>
+                <div class="col-12 py-2 mapNonMobile d-none d-sm-none d-md-block text-center">
+                    <div class="pt-4">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.468405468864!2d2.2992870156030274!3d49.89000883546883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7857c0e87f5fb%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Ecole%20sup%C3%A9rieure%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1655996198397!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div>
+                    <div class="pb-4">
                         <iframe src="https://www.google.com/maps/embed?pb=!4v1656071271141!6m8!1m7!1skaAB-tU4KDGQf9f5BU8qyw!2m2!1d49.89054553284382!2d2.301877209085684!3f225.50653!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- Fin de map -->
             <!-- Formulaire -->
-            <div class="row form">
-                <form action="/ma-page-de-traitement" method="post">
-                    <fieldset id="contact">
-                            <h3>Contactez-nous</h3>
-                            <br>
-                            <ol>
-                                <li>
-                                    <label for="firstNam">Votre Prénom:</label>
-                                    <input type="text" id="firstNam" name="firstNam" placeholder="Martin" required>
-                                </li>
-                                <br>
-                                <li>
-                                    <label for="Name">Votre nom:</label>
-                                    <input type="Name" id="Name" name="Name" placeholder="Dubois" required>
-                                </li>
-                                <br>
-                                <li>
-                                    <label for="Email">Votre e-mail:</label>
-                                    <input type="Email" id="Email" name="Email" placeholder="monadresse@mail.com" required>
-                                </li>
-                                <br>
-                                <li>
-                                    <label for="Date">Quel date vous convient?</label>
-                                    <select name="Date" id="Date" required>
-                                    <option value="DateChoise" disabled selected hidden>Choisissez la date et l'heure</option>
-                                    <option value="Tuesday1">Mardi 05/07/2022 14:30</option>
-                                    <option value="Tuesday2">Mardi 05/07/2022 17:30</option>
-                                    <option value="Wednesday">Mercredi 06/07/2022 15:00</option>
-                                    </select>
-                                </li>
-                                <br>
-                                <li>
-                                    <label for="message">Une question ?</label>
-                                    <br>
-                                    <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
-                                </li>
-                                <br>
-                                <li>
-                                    <button type="submit">Envoyer mon message</button>
-                                </li>
-                            </ol>
-                        </fieldset>
+            <div class="row container5 py-5 my-3 text-white">
+                <form class="col-8 offset-2 text-center" action="/ma-page-de-traitement" method="post">
+                    <h3 id="contact" class="text-white">CONTACTEZ NOUS</h3>
+                    <div class="fw-bold pb-2">
+                        <label for="firstNam">Prénom:</label>
+                        <input type="text" id="firstNam" name="firstNam" required>
+                    </div>
+                    <div class="fw-bold pb-2">
+                        <label for="Name">Nom:</label>
+                        <input type="Name" id="Name" name="Name" required>
+                    </div>
+                    <div class="fw-bold pb-2">
+                        <label for="Email">Email:</label>
+                        <input type="Email" id="Email" name="Email" required>
+                    </div>
+                    <div class="fw-bold pb-2">
+                        <label for="Date">Date:</label>
+                        <select name="Date" id="Date" required>
+                            <option value="DateChoise" disabled selected hidden>date et heure</option>
+                            <option value="Tuesday1">Mardi 05/07/2022 14:30</option>
+                            <option value="Tuesday2">Mardi 05/07/2022 17:30</option>
+                            <option value="Wednesday">Mercredi 06/07/2022 15:00</option>
+                        </select>
+                    </div>
+                    <div class="fw-bold pb-2">
+                        <label for="message">Une question?</label>
+                        <textarea id="message" name="message" class="px-2" required></textarea>
+                    </div>
+                    <div>
+                        <button class="border-2 border-dark rounded px-3" type="submit">Envoyer mon message</button>
+                    </div>
                 </form>
             </div>
             <!-- Fin de formulaire -->
         </div>
     </main>
-    <hr>
     <!----------------------------- Début du footer --------------------------->
-    <footer class="container-fluid footerFirst">
-        <div class="footerContainer">
-            <div class="fContainer">
-                <div class="footer">
-                    <div id="contact">
-                        <h4>Contact</h4>
-                        <p>06 60 06 60 06</p>
-                        <p>laBourse@lamanu.fr</p>
-                    </div>
-                    <div id="adress">
-                        <h4>Adresse</h4>
-                        <p>LaManu Amiens</p>
-                        <p>70 rue des Jacobins</p>
-                        <p>80000 Amiens</p>
-                    </div>
-                    <div id="hours">
-                        <h4>Horaires</h4>
-                        <p>Vendredi-Dimanche 10h-18h</p>
-                    </div>
-                    <div id="partnairs">
-                        <h4>Partenaires:</h4>
-                        <p>LaManu</p>
-                        <p>Amiens Métropole</p>
-                    </div>
-                </div>
+    <footer class="container-fluid">
+        <div class="row text-center fw-bold pt-3">
+            <div id="infoContact" class="col-6">
+                <p class="my-0 fw-bold">CONTACTS</p>
+                <p class="my-0">06 60 06 60 06</p>
+                <p class="my-0">laBourse@lamanu.fr</p>
+            </div>
+            <div id="partners" class="col-6">
+                <p class="my-0 fw-bold">PARTENAIRES</p>
+                <p class="my-0">LaManu</p>
+                <p class="my-0">Amiens Métropole</p>
+            </div>
+            <div id="legalMention" class="col-12 pt-5 pb-3">
+                <a href="potiblageur.html" class="text-decoration-none text-white">Mentions Légales</a>
             </div>
         </div>
-        <div id="sign">       
-            <p>Dévellopé par Nassim, Muriel et Alexis</p>
-        </div>
-        <div id="legalMention">
-            <a href="potiblageur.html">Mentions Légales</a>
-        </div>
-        <div id="scrollToTop">
-            <a href="#top"><img src="./public/assets/img/upPage.png" alt="Retourner en haut"></a>
-        </div>
+
     </footer>
+
+    <!-- FLECHE BACK TO TOP -->
+    <!-- <div id="scrollToTop">
+        <a href="#top"><img src="./public/assets/img/upPage.png" alt="Retourner en haut"></a>
+    </div> -->
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,4 +1,43 @@
+/* GENERAL CSS */
+html,body{
+    background-color: #a2b6df;
+}
+.firstPartyContainer,.container1,.container2,.container3,.container4,.container5 {
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+    border-radius: 15px;
+}
+.container1,.container2,.container3,.container4,.container5, footer {
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+}
+footer, header{
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+}
+
+.textShadow {text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black}
+/* FIrst Slide CSS */
+#firstSlide{
+    margin-top: 5rem;
+    height: 80vh;
+}
+@media (min-width: 768px ) {
+    #firstSlide{
+        margin-top: 15rem;
+        align-items: center;
+    }
+}
+#firstSlide {
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 100%), url(../img/La-Manu-Campus-Amiens-bleu.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#firstSlide p, #products, #contact, #info {
+    text-shadow: 2px 2px 4px #000000, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 /* NAV CSS */
+
 nav, .navList{
     background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
     text-shadow: 1px 1px 5px black;
@@ -13,14 +52,32 @@ nav, .navList{
     height: 20rem;
     width: 32.3rem;
 }
-/* GENERAL CSS */
-.firstPartyContainer,.container1,.container2,.container3,.container4 {
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
-}
-.container1,.container2,.container3,.container4 {
-    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 5px 7px rgb(0 0 0 / 0%);
+/* Carousel section Products */
+
+.carousel-item div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 50%;
 }
 
-.textShadow {text-shadow: -1px 0 black, 0 1px black,
-    1px 0 black, 0 -1px black}
+#carousel1 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(../img/pcs.webp);
+    background-size: cover;
+    height: 50vh;
+}
+
+#carousel2 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(../img/mobiles.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+#carousel3 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(../img/tablets.png);
+    background-size: cover;
+    height: 50vh;
+}
+/* end carousel section Products */
