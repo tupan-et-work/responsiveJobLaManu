@@ -113,12 +113,6 @@
                     </button>
                 </div>
             </div>
-            <!-- <p>Les marques proposer seront:<br><br>
-                        -Pour les Ordinateurs: Apple, Assus, Acer, Lenovo, HP, Dell, ...<br>
-                        -Pour les Téléphones: Samsung, Huawei, Honor, Xiaomi, ...<br>
-                        -Pour les Tablettes: Samsung, Microsoft, Lenovo, Huawei, ... <br>
-                        </p> -->
-
             <!-- Fin de produit -->
             <!-- Important Info -->
             <div class="row container3" id="info">
@@ -156,50 +150,37 @@
             </div> -->
             <!-- Fin de map -->
             <!-- Formulaire -->
-            <div class="row form">
-                <form action="/ma-page-de-traitement" method="post">
-                    <fieldset id="contact">
-                        <h3>Contactez-nous</h3>
-                        <br>
-                        <ol>
-                            <li>
-                                <label for="firstNam">Votre Prénom:</label>
-                                <input type="text" id="firstNam" name="firstNam" placeholder="Martin" required>
-                            </li>
-                            <br>
-                            <li>
-                                <label for="Name">Votre nom:</label>
-                                <input type="Name" id="Name" name="Name" placeholder="Dubois" required>
-                            </li>
-                            <br>
-                            <li>
-                                <label for="Email">Votre e-mail:</label>
-                                <input type="Email" id="Email" name="Email" placeholder="monadresse@mail.com" required>
-                            </li>
-                            <br>
-                            <li>
-                                <label for="Date">Quel date vous convient?</label>
-                                <select name="Date" id="Date" required>
-                                    <option value="DateChoise" disabled selected hidden>Choisissez la date et l'heure
-                                    </option>
-                                    <option value="Tuesday1">Mardi 05/07/2022 14:30</option>
-                                    <option value="Tuesday2">Mardi 05/07/2022 17:30</option>
-                                    <option value="Wednesday">Mercredi 06/07/2022 15:00</option>
-                                </select>
-                            </li>
-                            <br>
-                            <li>
-                                <label for="message">Une question?</label>
-                                <br>
-                                <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...."
-                                    required></textarea>
-                            </li>
-                            <br>
-                            <li>
-                                <button type="submit">Envoyer mon message</button>
-                            </li>
-                        </ol>
-                    </fieldset>
+            <div class="row container5 py-5">
+                <form class="col-8 offset-2 text-center" action="/ma-page-de-traitement" method="post">
+                    <h3 id="contact" class="text-white">CONTACTEZ NOUS</h3>
+                    <div class="fw-bold pb-2">
+                        <label for="firstNam">Prénom:</label>
+                        <input type="text" id="firstNam" name="firstNam" required>
+                    </div>
+                    <div class="fw-bold pb-2">
+                        <label for="Name">Nom:</label>
+                        <input type="Name" id="Name" name="Name" required>
+                    </div>
+                    <div class="fw-bold pb-2">
+                        <label for="Email">Email:</label>
+                        <input type="Email" id="Email" name="Email" required>
+                    </div>
+                    <div class="fw-bold pb-2">
+                        <label for="Date">Date:</label>
+                        <select name="Date" id="Date" required>
+                            <option value="DateChoise" disabled selected hidden>date et heure</option>
+                            <option value="Tuesday1">Mardi 05/07/2022 14:30</option>
+                            <option value="Tuesday2">Mardi 05/07/2022 17:30</option>
+                            <option value="Wednesday">Mercredi 06/07/2022 15:00</option>
+                        </select>
+                    </div>
+                    <div class="fw-bold pb-2">
+                        <label for="message">Une question?</label>
+                        <textarea id="message" name="message" class="px-4" required></textarea>
+                    </div>
+                    <div>
+                        <button class="border-2 border-dark rounded px-3" type="submit">Envoyer mon message</button>
+                    </div>
                 </form>
             </div>
             <!-- Fin de formulaire -->
@@ -207,8 +188,8 @@
     </main>
     <!----------------------------- Début du footer --------------------------->
     <footer class="container-fluid">
-        <div class="row text-center fw-semibold pt-3">
-            <div id="contact" class="col-6">
+        <div class="row text-center fw-bold pt-3">
+            <div id="infoContact" class="col-6">
                 <p class="my-0 fw-bold">CONTACTS</p>
                 <p class="my-0">06 60 06 60 06</p>
                 <p class="my-0">laBourse@lamanu.fr</p>
