@@ -15,3 +15,34 @@
 #firstSlide p {
     text-shadow: 2px 2px 4px #000000, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+#products {
+    text-shadow: 2px 2px 4px #000000, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.carousel-item div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 50%;
+}
+
+#carousel1 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(../img/the-technician-repairing-the-computer-computer-hardware-repairing-upgrade-and-technology.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+#carousel2 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(../img/mobile-phone-cases-mockup-product-showcase.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+#carousel3 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(../img/worker-reading-news-with-tablet.jpg);
+    background-size: cover;
+    height: 50vh;
+}
